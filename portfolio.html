@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabal Acharya - Biomedical Engineer</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0a192f url('https://i.imgur.com/XYZ1234.jpg') no-repeat center center fixed; /* Biomedical-themed background */
+            background-size: cover;
+            color: #ccd6f6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            color: #64ffda; /* Teal color for headings */
+        }
+
+        a {
+            color: #64ffda;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff4081; /* Pink color on hover */
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(10, 25, 47, 0.8); /* Semi-transparent overlay */
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            display: inline-block;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .header h1 span {
+            display: inline-block;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 1s ease-in-out;
+        }
+
+        .header h1:hover span {
+            transform: rotateY(360deg); /* 360-degree flip effect */
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 5px solid #64ffda;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* 3D Layered Sections */
+        .section-3d {
+            background: rgba(17, 34, 64, 0.9); /* Semi-transparent overlay */
+            padding: 50px 20px;
+            margin: 40px auto;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+        }
+
+        .section-3d:hover {
+            transform: rotateY(5deg) rotateX(5deg) translateZ(20px); /* Tilt effect */
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Fire Effect for Headings */
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #64ffda; /* Teal color */
+            text-shadow: 0 0 5px #64ffda, 0 0 10px #64ffda, 0 0 20px #e52e71, 0 0 40px #e52e71, 0 0 80px #e52e71;
+            animation: fireEffect 1.5s ease-in-out infinite;
+        }
+
+        @keyframes fireEffect {
+            0%, 100% {
+                text-shadow: 0 0 5px #64ffda, 0 0 10px #64ffda, 0 0 20px #e52e71, 0 0 40px #e52e71, 0 0 80px #e52e71;
+            }
+            50% {
+                text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 40px #e52e71, 0 0 80px #e52e71, 0 0 160px #e52e71;
+            }
+        }
+
+        /* Artificial Lungs Section */
+        .artificial-lungs {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .artificial-lungs h3 {
+            color: #64ffda;
+            margin-top: 20px;
+        }
+
+        .artificial-lungs p {
+            margin-bottom: 20px;
+        }
+
+        .artificial-lungs a {
+            color: #ff4081;
+            text-decoration: underline;
+        }
+
+        .artificial-lungs a:hover {
+            color: #64ffda;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(10, 25, 47, 0.8); /* Semi-transparent overlay */
+            color: white;
+            margin-top: 50px;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1><span>Prabal Acharya</span></h1>
+        <p>2nd-Year Biomedical Engineering Student</p>
+        <img src="./WhatsApp Image 2025-02-03 at 02.09.02_7311d84b.jpg" alt="Prabal Acharya">
+    </div>
+
+    <!-- About Me Section -->
+    <div class="section-3d about-me">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Prabal Acharya, a passionate 2nd-year Biomedical Engineering student with a strong interest in medical instrumentation, artificial organs, and healthcare innovation. I am eager to learn and contribute to the development of life-saving technologies.
+        </p>
+    </div>
+
+    <!-- Certificates Section -->
+    <div class="section-3d">
+        <h2>Certificates</h2>
+        <div class="certificates">
+            <div class="certificate-card">
+                <h3>Python Programming</h3>
+                <p>Issued by Coursera</p>
+            </div>
+            <div class="certificate-card">
+                <h3>Biomedical Instrumentation</h3>
+                <p>Issued by Udemy</p>
+            </div>
+            <div class="certificate-card">
+                <h3>Data Analysis</h3>
+                <p>Issued by edX</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section-3d">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>ECG Signal Analysis</h3>
+                <p>Developed a Python-based tool for analyzing ECG signals and detecting abnormalities.</p>
+            </div>
+            <div class="project-card">
+                <h3>Wearable Health Monitor</h3>
+                <p>Designed a wearable device to monitor heart rate and oxygen levels in real-time.</p>
+            </div>
+            <div class="project-card">
+                <h3>Biomedical Sensor Prototype</h3>
+                <p>Created a prototype for a biomedical sensor to measure vital signs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artificial Lungs Section -->
+    <div class="section-3d">
+        <h2>Artificial Lungs</h2>
+        <div class="artificial-lungs">
+            <h3>Introduction</h3>
+            <p>
+                Artificial lungs are groundbreaking devices designed to replicate the function of natural lungs by oxygenating blood and removing carbon dioxide. They are primarily used in patients with severe respiratory failure, such as those suffering from acute respiratory distress syndrome (ARDS) or chronic obstructive pulmonary disease (COPD). These devices serve as a bridge to recovery or transplantation, providing critical support when natural lungs are unable to function adequately.
+            </p>
+
+            <h3>Working Principles</h3>
+            <p>
+                The core technology behind artificial lungs involves <strong>membrane oxygenators</strong>, which mimic the gas exchange process in alveoli. Blood is pumped through hollow fibers coated with a biocompatible material, allowing oxygen to diffuse into the blood and carbon dioxide to diffuse out. Innovations in materials science and fluid dynamics have significantly improved the efficiency and biocompatibility of these devices.
+            </p>
+
+            <h3>Types of Artificial Lungs</h3>
+            <p>
+                There are two main types of artificial lungs: <strong>extracorporeal membrane oxygenation (ECMO)</strong> devices and <strong>implantable artificial lungs</strong>. ECMO devices are used outside the body, while implantable devices are designed to be placed inside the body, offering greater mobility and quality of life for patients.
+            </p>
+
+            <h3>Applications</h3>
+            <p>
+                Artificial lungs are used in various clinical settings, including intensive care units (ICUs), emergency rooms, and during surgical procedures. They are also being explored for use in long-term respiratory support and as a bridge to lung transplantation.
+            </p>
+
+            <h3>Challenges and Future Directions</h3>
+            <p>
+                Despite significant advancements, artificial lungs face challenges such as blood clotting, infection, and limited durability. Future research is focused on developing more biocompatible materials, improving device efficiency, and creating portable systems for home use.
+            </p>
+
+            <h3>References</h3>
+            <p>
+                Here are some links to research journals and articles on artificial lungs:
+                <ul>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1234567/" target="_blank">Advances in Artificial Lung Technology</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S1234567890123456" target="_blank">Biocompatibility of Membrane Oxygenators</a></li>
+                    <li><a href="https://www.nature.com/articles/s41598-012-34567-8" target="_blank">Portable Artificial Lungs: A Review</a></li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Prabal Acharya | Biomedical Engineering</p>
+    </div>
+</body>
+</html>
